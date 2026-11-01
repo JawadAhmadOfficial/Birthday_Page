@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#190d22">
+<title>Happy Birthday, Beautiful Soul ❤️</title>
+<style>
+:root{--pink:#ff6b9a;--gold:#ffd58a;--cream:#fff4f7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--cream);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 20% 15%,#51213f 0,transparent 38%),radial-gradient(ellipse at 85% 75%,#38204f 0,transparent 40%),linear-gradient(145deg,#100916,#211126 55%,#130b1b);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.2;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:35px 35px}
+.wrap{width:min(920px,92%);margin:auto;padding:38px 0 55px;text-align:center;position:relative}
+.topline{font:600 11px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin:14px 0 24px}
+.heart{font-size:46px;display:inline-block;filter:drop-shadow(0 0 18px #ff6b9a);animation:pulse 1.7s infinite}
+h1{font-size:clamp(42px,10vw,86px);line-height:.98;margin:18px 0 14px;font-weight:normal;letter-spacing:-2px}
+h1 span{color:var(--pink);font-style:italic}
+.subtitle{font:15px/1.8 Arial,sans-serif;color:#ead9e7;max-width:590px;margin:0 auto}
+.card{margin:34px auto 25px;padding:30px 25px;max-width:680px;border:1px solid #ffffff2b;border-radius:25px;background:linear-gradient(135deg,#ffffff12,#ffffff06);box-shadow:0 18px 60px #0005;backdrop-filter:blur(8px)}
+.card h2{font-size:29px;font-weight:normal;color:var(--gold);margin:0 0 15px}
+.message{font:16px/1.9 Arial,sans-serif;color:#f7eaf2}
+.signature{font-style:italic;color:var(--pink);font-size:22px;margin-top:20px}
+button{border:0;border-radius:999px;padding:15px 25px;margin:10px 6px;background:linear-gradient(110deg,#ff6b9a,#c75be8);color:white;font-weight:700;font-size:14px;letter-spacing:.3px;box-shadow:0 8px 25px #e84d9c44;cursor:pointer}
+button:active{transform:scale(.97)}
+#surprise{display:none;margin:22px auto 0;max-width:650px;padding:24px;border-radius:20px;background:#fff1f51a;border:1px solid #ffffff2b;font:16px/1.9 Arial,sans-serif}
+.promise{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:27px 0}
+.promise span{padding:10px 15px;border:1px solid #ffffff26;border-radius:999px;color:#f8dce9;font:12px Arial,sans-serif}
+footer{font:11px Arial,sans-serif;color:#bda9bd;letter-spacing:1px;margin-top:40px}
+.float{position:fixed;bottom:-30px;color:#ff9abd;opacity:.55;animation:rise 9s linear infinite;pointer-events:none}
+@keyframes pulse{50%{transform:scale(1.13)}}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+@media(max-width:520px){.wrap{padding-top:25px}.card{padding:25px 18px}.message{font-size:14px}.topline{letter-spacing:2.5px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="topline">A little page made with a lot of love</div>
+  <div class="heart">♥</div>
+  <h1>Happy Birthday,<br><span>My Love</span></h1>
+  <p class="subtitle">Today is special because the world became brighter on the day you were born. I hope this little surprise makes you smile. ❤️</p>
+
+  <section class="card">
+    <h2>To my beautiful girl</h2>
+    <div class="message">
+      May your birthday be filled with happiness, peace, laughter, and all the beautiful things your heart wishes for.
+      <br><br>
+      You are someone I feel lucky to have in my life. I pray that every new chapter brings you closer to your dreams, and that I get to cheer for you through every one of them.
+      <br><br>
+      And one day, if Allah wills, I hope I get to celebrate every birthday beside you — and I hope life always brings you happiness, success, and beautiful memories.
+    </div>
+    <div class="signature">With warm wishes and lots of happiness 💖</div>
+  </section>
+
+  <div class="promise">
+    <span>More smiles 😊</span><span>More adventures ✨</span><span>More memories 💗</span>
+  </div>
+
+  <button onclick="reveal()">Open your little surprise 💌</button>
+  <div id="surprise">
+    <div style="font-size:30px;margin-bottom:10px">💖</div>
+    <strong>A Special Birthday Wish</strong><br>
+    May your life always be filled with kindness, success, peace, laughter, and countless reasons to smile. May Allah bless you, protect you, and make all your dreams come true.<br><br>
+    <span style="color:#ffd58a">Happy Birthday once again, my favourite person. ❤️</span>
+  </div>
+  <footer>MADE ESPECIALLY FOR YOU · WITH LOVE ♥</footer>
+</main>
+<script>
+function reveal(){
+ const box=document.getElementById('surprise');
+ box.style.display=box.style.display==='block'?'none':'block';
+ if(box.style.display==='block') box.scrollIntoView({behavior:'smooth',block:'center'});
+}
+for(let i=0;i<13;i++){
+ const h=document.createElement('div');h.className='float';h.textContent=['♥','♡','✦'][i%3];
+ h.style.left=(Math.random()*100)+'%';h.style.animationDelay=(Math.random()*8)+'s';
+ h.style.animationDuration=(7+Math.random()*7)+'s';h.style.fontSize=(14+Math.random()*20)+'px';
+ document.body.appendChild(h);
+}
+</script>
+</body>
+</html>
